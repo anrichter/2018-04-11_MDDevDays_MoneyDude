@@ -14,5 +14,10 @@ namespace MoneyDude.ViewModels
         {
             Title = "Add new Transaction to Account";
         }
+
+        public override void OnNavigatedTo(NavigationParameters parameters)
+        {
+            throw new ArgumentNullException("parameters should not be null");
+        }
     }
 }

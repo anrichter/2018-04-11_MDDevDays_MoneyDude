@@ -1,4 +1,6 @@
-﻿using Prism;
+﻿using Microsoft.AppCenter;
+using Microsoft.AppCenter.Crashes;
+using Prism;
 using Prism.Ioc;
 using MoneyDude.ViewModels;
 using MoneyDude.Views;
@@ -19,6 +21,14 @@ namespace MoneyDude
         public App() : this(null) { }
 
         public App(IPlatformInitializer initializer) : base(initializer) { }
+
+
+        protected override void OnStart()
+        {
+            AppCenter.Start(
+                "android=55b0c113-691e-4478-8a90-abd12d212dc7;ios=f54df965-0774-434a-a443-7cca728d7fd9",
+                typeof(Crashes));
+        }
 
         protected override async void OnInitialized()
         {

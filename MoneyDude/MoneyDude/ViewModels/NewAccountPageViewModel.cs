@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AppCenter.Crashes;
 using Prism.Navigation;
 
 namespace MoneyDude.ViewModels
@@ -14,5 +15,18 @@ namespace MoneyDude.ViewModels
         {
             Title = "Creat a new Account";
         }
+
+        public override void OnNavigatedTo(NavigationParameters parameters)
+        {
+            try
+            {
+                throw new ArgumentNullException("Error in new account");
+            }
+            catch (Exception e)
+            {
+                Crashes.TrackError(e);
+            }
+        }
+
     }
 }
