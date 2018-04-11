@@ -1,4 +1,5 @@
 ﻿using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Prism;
 using Prism.Ioc;
@@ -27,7 +28,7 @@ namespace MoneyDude
         {
             AppCenter.Start(
                 "android=55b0c113-691e-4478-8a90-abd12d212dc7;ios=f54df965-0774-434a-a443-7cca728d7fd9",
-                typeof(Crashes));
+                typeof(Crashes), typeof(Analytics));
         }
 
         protected override async void OnInitialized()

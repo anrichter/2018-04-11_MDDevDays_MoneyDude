@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AppCenter.Analytics;
 using Prism.Navigation;
 
 namespace MoneyDude.ViewModels
@@ -13,6 +14,12 @@ namespace MoneyDude.ViewModels
             : base(navigationService)
         {
             Title = "Open Reports";
+        }
+
+
+        public override void OnNavigatedTo(NavigationParameters parameters)
+        {
+            Analytics.TrackEvent("Open Reporst");
         }
     }
 }

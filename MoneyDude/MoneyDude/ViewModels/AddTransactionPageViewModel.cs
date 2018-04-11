@@ -3,6 +3,8 @@ using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
 using Prism.Navigation;
 
 namespace MoneyDude.ViewModels
@@ -17,7 +19,7 @@ namespace MoneyDude.ViewModels
 
         public override void OnNavigatedTo(NavigationParameters parameters)
         {
-            throw new ArgumentNullException("parameters should not be null");
+            Analytics.TrackEvent("AddTransaction");
         }
     }
 }
