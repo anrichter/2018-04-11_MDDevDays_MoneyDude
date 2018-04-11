@@ -5,7 +5,10 @@
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin Forms and Prism!" />
+        <Label Text="Welcome to Money Dude!" />
+        <Button Text="New Account" Command="{Binding NewAccount}" />
+        <Button Text="Add Transaction" Command="{Binding AddTransaction}" />
+        <Button Text="Open Reports" Command="{Binding OpenReports}" />
     </StackLayout>
 
 </ContentPage>
