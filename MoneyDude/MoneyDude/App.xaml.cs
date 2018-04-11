@@ -32,6 +32,8 @@ namespace MoneyDude
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<NewAccountPage>();
+            containerRegistry.RegisterForNavigation<AddTransactionPage>();
+            containerRegistry.RegisterForNavigation<OpenReportsPage>();
         }
     }
 }
