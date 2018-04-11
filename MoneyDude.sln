@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyDude", "MoneyDude\MoneyDude\MoneyDude.csproj", "{38998A23-6F65-46C7-AC84-A3042EF7E310}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyDude", "MoneyDude\MoneyDude\MoneyDude.csproj", "{38998A23-6F65-46C7-AC84-A3042EF7E310}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyDude.Android", "MoneyDude\MoneyDude.Android\MoneyDude.Android.csproj", "{371C6216-BF8D-48CB-B00E-D21014A05870}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyDude.iOS", "MoneyDude\MoneyDude.iOS\MoneyDude.iOS.csproj", "{57235FCA-E2E7-4FB9-BB64-C7E57850FA84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0D121104-6874-4863-9044-FD247E5D4284}"
+	ProjectSection(SolutionItems) = preProject
+		appcenter-pre-build.sh = appcenter-pre-build.sh
+		MoneyDude\MoneyDude.Android\appcenter-pre-build.sh = MoneyDude\MoneyDude.Android\appcenter-pre-build.sh
+		build.ps1 = build.ps1
+		build.sh = build.sh
+		bulid.cake = bulid.cake
+		cake.config = cake.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
